@@ -1,0 +1,74 @@
+button{
+  background: #eee;
+  padding: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+}
+.tool-panel::before{
+	content: '';
+    display: block;
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    top: -14px;
+    left: 60px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 11px solid darkgrey;
+}
+.tool-panel::after{
+	content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 62px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.tool-panel{
+    padding: 8px;
+    display: inline-block;
+    border: 1px solid darkgrey;
+    position: absolute;
+    left: 118px;
+    top: 41px;
+    background-color: #fff;
+}
+.tool-panel button{
+	border: 1px solid darkgrey;
+}
+.tool-panel button:first-child{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.tool-panel button:nth-child(2),.tool-panel button:nth-child(3){
+	border-left: none;
+    border-right: none;
+}
+.tool-panel button:nth-child(3){
+	border-left: 1px solid darkgrey;
+}
+.tool-panel button:last-child{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+input[type="text"]{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	border: 1px solid darkgrey;
+	height: 29px;
+	font-size: 14px;
+    max-width: 172px;
+}
+.text-bold{
+	font-weight: bold;
+}
+.text-italic{
+	font-style: italic;
+}
