@@ -5,9 +5,7 @@
     editController.$injest = ['$scope','$compile'];
     toolPanelDirective.$injest = [];
     function editController($scope,$compile){
-        debugger;
         this.enableToolPanel = function enableToolPanelFunc(){
-            debugger;
             var editBtnElem = document.querySelector('.editor-btn'),
             toolPanelSection = $compile('<section class="tool-panel" tool-panel-directive></section>')($scope);
             angular.element(editBtnElem).on('click',function(){
@@ -42,4 +40,3 @@
        }
     }
 })();
-//templateUrl:'./templates/toolPanel.html',
